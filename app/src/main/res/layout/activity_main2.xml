@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.e17a742b.s03.Main2Activity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Level" />
+
+
+
+    <RadioGroup
+        android:id="@+id/rd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/textView"
+        android:layout_marginLeft="20dp">
+
+
+
+        <RadioButton
+            android:id="@+id/rdBeginner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:text="Beginner" />
+
+        <RadioButton
+            android:id="@+id/rdUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="User" />
+
+        <RadioButton
+            android:id="@+id/rdExpert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Expert" />
+
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rd"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Name" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text=""
+        android:layout_marginRight="20dp"
+        android:layout_alignBaseline="@+id/textViewName"
+        android:layout_alignBottom="@+id/textViewName"
+        android:layout_alignStart="@+id/rd" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="OK"
+        android:layout_below="@+id/editText"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>
